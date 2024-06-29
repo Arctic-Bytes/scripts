@@ -1,0 +1,13 @@
+#!/bin/bash
+
+WINDOWS_FOLDER_IN_LINUX=$(windowspath)
+
+cd $WINDOWS_FOLDER_IN_LINUX
+
+cd Desktop
+mkdir -p foundimages
+cd ..
+
+cd Downloads
+mv -v *.png *.jpg *.jpeg *.gif *.pdf ../Desktop/foundimages
+rm -I -r *

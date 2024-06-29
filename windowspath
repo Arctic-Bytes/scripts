@@ -1,0 +1,10 @@
+#!/bin/bash
+
+WINDOWS_FOLDER=$(cmd.exe /c "echo %USERPROFILE%" 2>/dev/null | tr -d '\r')
+
+WINDOWS_FOLDER_IN_LINUX=$(wslpath $WINDOWS_FOLDER)
+
+echo $WINDOWS_FOLDER_IN_LINUX
+
+
+
